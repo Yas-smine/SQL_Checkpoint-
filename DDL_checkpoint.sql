@@ -43,6 +43,8 @@ FOREIGN KEY (Projet_Num_P) REFERENCES Projet(Num_P)
 );
 GO
 
+EXEC sp_rename 'Departement.Libel', 'Label', 'COLUMN';
+GO
 
 
 
